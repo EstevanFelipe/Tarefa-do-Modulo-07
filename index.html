@@ -4,46 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validação de Formulário</title>
-    <style>
-        /* Estilos para o formulário */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        form {
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-        }
-        button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .error-message {
-            color: red;
-        }
-        .success-message {
-            color: green;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Validação de Formulário</h1>
-    <form id="form-confirm">
-        <label for="valor-a">Valor A:</label>
-        <input type="number" id="valor-a" required placeholder="Digite o valor A">
-        <label for="valor-b">Valor B:</label>
-        <input type="number" id="valor-b" required placeholder="Digite o valor B">
-        <p class="error-message">O valor B precisa ser maior que o valor A!</p>
-        <button type="submit">Validar</button>
-    </form>
-    <p class="success-message"></p>
+    <div class="container">
+        <div class="box">
+            <h1>Validação de Formulário</h1>
+            <form id="form-confirm">
+                <label for="valor-a">Valor A:</label>
+                <input type="number" id="valor-a" required placeholder="Digite o valor A">
+                <label for="valor-b">Valor B:</label>
+                <input type="number" id="valor-b" required placeholder="Digite o valor B">
+                <p class="error-message">O valor B precisa ser maior que o valor A!</p>
+                <button type="submit">Validar</button>
+            </form>
+            <p class="success-message"></p>
+        </div>
+    </div>
 
     <script>
         const form = document.getElementById('form-confirm');
@@ -59,7 +36,7 @@
 
             if (valB > valA) {
                 // Formulário válido
-                const successMessage = 'Formulário enviado com sucesso! Verificando: Valor B é maior que Valor A!';
+                const successMessage = 'Valor B é maior que Valor A!';
                 const containerSuccessMessage = document.querySelector('.success-message');
                 containerSuccessMessage.innerHTML = successMessage;
                 containerSuccessMessage.style.display = 'block';
