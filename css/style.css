@@ -62,4 +62,5 @@ p {
 
 .success-message {
     color: green;
+    display: none;
 }
