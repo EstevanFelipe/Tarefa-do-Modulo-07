@@ -1,0 +1,66 @@
+/* Estilos para o formulário */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #30ded5;
+}
+
+/* Estilo do container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Altura mínima da viewport */
+    background-color: #30ded5;
+}
+
+.box {
+    width: 400px;
+    height: 600px;
+}
+
+/* Estilo h1 */
+h1 {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Estilo do Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+p {
+    padding: 10px;
+}
+
+.error-message {
+    color: red;
+}
+
+.success-message {
+    color: green;
+    display: none;
+}
